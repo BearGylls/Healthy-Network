@@ -19,4 +19,4 @@ Technologies mise en oeuvre :
 
 - Ouvrir un autre terminal et taper la commande "npm start"
 
-http://www.sante-nutrition.org/10-ingredients-additifs-a-bannir-de-alimentation/
+https://github.com/BearGylls/Rendu_Projet_Final/edit/master/index.png
