@@ -19,4 +19,4 @@ Technologies mise en oeuvre :
 
 - Ouvrir un autre terminal et taper la commande "npm start"
 
-https://github.com/BearGylls/Rendu_Projet_Final/edit/master/index.png
+https://github.com/BearGylls/Rendu_Projet_Final/edit/master/index.PNG
