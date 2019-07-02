@@ -1,13 +1,8 @@
 # Rendu_Projet_Final
 
-Déploiement : 
+Le but de cette solution est de permettre à un utilisateur du réseau de valider l'incarnation de certains principes de santé naturelle dans la blockchain, et d'être rémunéré pour ça. Parce qu'être tous en meilleur santé, ça crée plus de valeur que l'inverse.
 
-
-Le but de cette solution est de permettre à un utilisateur de valider l'incarnation de certains principes de santé dans la blockchain, et d'être rémunéré pour ça.
-
-Technologies mise en oeuvre :
-- Un noeud ethereum
-- HTML/Javascript
+Déploiement de la solution : 
 
 - Ouvrir un terminal et taper les commandes suivantes :
 	- mkdir src contracts build
@@ -18,5 +13,10 @@ Technologies mise en oeuvre :
 - Lancer le noeud ethereum avec ganache en tapant la commande "ganache-cli"
 
 - Ouvrir un autre terminal et taper la commande "npm start"
+
+Technologies mise en oeuvre :
+- Un noeud ethereum
+- HTML/Javascript
+- node.js
 
 https://github.com/BearGylls/Rendu_Projet_Final/edit/master/index.PNG
