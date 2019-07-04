@@ -7,7 +7,7 @@ Déploiement de la solution :
 - Ouvrir un terminal et taper les commandes suivantes :
 	- mkdir src contracts build
 	- mv inscription.sol contracts/
-	- mv index.hmtl inscription.html data.js app.js src/
+	- mv index.hmtl data.js app.js src/
 	- npm install
 
 - Lancer le noeud ethereum avec ganache en tapant la commande "ganache-cli"
