@@ -1,0 +1,35 @@
+	<html>
+    <head>
+	  <meta charset="UTF-8">
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title> Principes de régénération proposés  </title>	
+	</head>
+	
+	 <script src="https://unpkg.com/ipfs-http-client@29.1.1/dist/index.min.js"></script>
+	 <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js"></script>
+	<script src="data.js	" ></script>
+	<script src="app.js" ></script>
+	
+    <body onload="userbalance()">
+		<div class="principes" id="principes">
+		<div>
+			<label>Méditation <button class="button" id="1" name="valider"/> valider  </label></br>
+		</div>
+		<div>
+			<label>Douche froide<button class="button" id="2" name="valider" /> valider </label></br>
+		</div>
+		<div>
+			<label>Exercice de respiration<button class="button" id="3"  name="valider" /> valider </label></br>
+		</div>
+		<div>
+			<label>Jeûne Intermittent<button class="button" id="4" name="valider" /> valider </label></br>
+		</div>
+	</div>
+	<div>
+		Votre solde : 	<span id="solde" onload="userBalance()"></span>
+		<!-- onload="userBalance()" -->
+	</div>
+	</body>

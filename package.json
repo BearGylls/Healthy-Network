@@ -1,0 +1,20 @@
+{
+  "name": "sceneouvertedeploiement",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm build/*",
+    "compile": "solc --combined-json abi,bin contracts/inscription.sol > build/inscription.json",
+    "deploy": "node deploy.js",
+    "serve": "live-server src/",
+    "start": "npm run compile && npm run deploy && npm run serve"
+  },
+  "author": "Xavier Lavayssière",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^4.0.28",
+    "ipfs-http-client": "^32.0.1",
+    "js-sha3": "^0.8.0"
+  },
+  "description": ""
+}
