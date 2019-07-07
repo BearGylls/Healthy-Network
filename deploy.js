@@ -3,12 +3,6 @@ const ethers = require('ethers')
 const output = require('./build/inscription')
 const so = output.contracts['contracts/inscription.sol:Inscription']
 
-var ipfsClient = require('ipfs-http-client')
-// connect to ipfs daemon API server
-var ipfs = ipfsClient('localhost', '5001', { protocol: 'http' }) // leaving out the arguments will default to these values
-
-ipfs.addFromFs('/home/ro/Alyra/Final/src', { recursive: true})
-
 async function deployAll() {
  var provider = new ethers.providers.JsonRpcProvider("http://localhost:8545")
  const signer = provider.getSigner(0)
