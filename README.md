@@ -19,4 +19,6 @@ Technologies mise en oeuvre :
 - HTML/Javascript
 - node.js
 
-https://github.com/BearGylls/Rendu_Projet_Final/edit/master/index.PNG
+https://github.com/BearGylls/Healthy-Network/blob/master/index.PNG
+
+https://github.com/BearGylls/Healthy-Network/blob/master/principes.PNG
