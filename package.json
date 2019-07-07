@@ -9,8 +9,8 @@
     "serve": "live-server src/",
     "start": "npm run compile && npm run deploy && npm run serve"
   },
-  "author": "Xavier Lavayssière",
-  "license": "ISC",
+  "author": "Timothée Sueur",
+  "license": "",
   "dependencies": {
     "ethers": "^4.0.28",
     "ipfs-http-client": "^32.0.1",
