@@ -21,11 +21,9 @@ connectMetamask()
 
 async function inscription(){
 	var pseudo = document.getElementById('pseudo').value;
-	var pass = document.getElementById('password').value;
-	var passC = document.getElementById('confirmPassword').value;
-	// Vérification d'un champs pseudo rempli, et d'une correspondance des mots de passe
-    if((pass != passC)||(pseudo=="")||(pass == "")){
-        alert("Vous avez oublié de remplir le pseudo, sinon les mots de passe ne correspondent pas");
+	// Vérification d'un champs pseudo rempli
+    if(pseudo==""){
+        alert("Vous avez oublié de remplir le pseudo");
     }
 	else {
 		// Vérification que l'adresse ethereum n'est pas déjà membre
@@ -69,6 +67,7 @@ var boutons = document.querySelectorAll('button');
 
 for(i=0;i<boutons.length;i++){
 	boutons[i].addEventListener('click', async function(b){
+		console.log('e');
 		// Enregistrement du principe dans la blockchain
 		await dapp.ContratSigner.validerPrincipe(b.target.parentElement.innerHTML,b.target.id);
 		userBalance();
