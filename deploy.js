@@ -22,7 +22,7 @@ async function deployAll() {
  })
 await contract.deployed();
 console.log("deployé");
-await contract.sInscrire("Bozo");
+await contract.sInscrire("Jean");
 let artist = await contract.getPseudo();
 console.log(artist)
 
