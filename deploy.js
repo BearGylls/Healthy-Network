@@ -17,7 +17,7 @@ async function deployAll() {
 await contract.deployed();
 console.log("deployé");
 await contract.sInscrire("Jean");
-let artist = await contract.getPseudo();
+let membre = await contract.getPseudo();
 console.log(artist)
 
 }
