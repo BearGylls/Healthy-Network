@@ -14,7 +14,6 @@ contract Inscription {
     mapping (address => bool) estMembre;
     mapping (address => mapping (string => Principe)) principeValide;
     mapping (address => uint) soldeTokens;
-    mapping (address => bytes32) hashMotDePasse;
     uint[]  poidsPrincipes=[1,2,3,4];
 
     
@@ -23,6 +22,7 @@ contract Inscription {
         adressMembre[_pseudo]=msg.sender;
         Pseudo[msg.sender]=_pseudo;
         estMembre[msg.sender]=true;
+        soldeTokens[msg.sender]=0;	
     }
     
     function validerPrincipe(string memory _principe, uint _idPrincipe) public returns(uint){
@@ -45,7 +45,7 @@ contract Inscription {
     }
 
 	 function isPseudoFree(string memory _pseudo) public view returns(bool){
-	 	if(adressMembre[_pseudo]== 0x0000000000000000000000000000000000000000){
+	 	if(adressMembre[_pseudo]== address(0)){
 			return true;	 	
 	 	}
 	 	else{
@@ -56,12 +56,4 @@ contract Inscription {
     function getPrincipe(string memory _principe) public view returns (bool){
         return principeValide[msg.sender][_principe].valide;
     }
-
-	function setPassMember(bytes32 _passMember) public {
-		hashMotDePasse[msg.sender] = _passMember;	
-	}
-	
-	function getPassMember() public view returns(bytes32){
-		return hashMotDePasse[msg.sender];	
-	}
 }
